@@ -126,34 +126,41 @@ This is an example of how to list things you need to use the software and how to
   Add a record: 
   index.js add --record="{'type':'Machine','':'',...}"
 
+  Get a record:
   index.js get --docId="{'docId': 'MachineID'}"
 
+  Get Rev details
   index.js getRev --docId="{'docId': 'MachineID'}"
 
+  Check resource availability
   index.js checkAvailability --docId="{'docId':
                                'MachineID'}"
+
+  Delete a resource                              
   index.js delete --docId="{'docId': 'MachineID'}"
 
+  Update a resource
   index.js update --docId="{'docId': 'MachineID'}"
                                --record="{'type': 'Machine','':'',...}"
   
+  Reserve a resource
   index.js reserve --record="{'docId': 'MachineID',
                                'hours': 'hours'}"     
 
+  Release a resource
   index.js release --record="{'docId': 'MachineID',
                                'hours': 'hours'}"
 
+  Subscribe a service
   index.js release --record="{'docId': 'MachineID',
                                'clientID': 'clientID' , 'SubscribedTill':
                                '02/11/2022'}"
 
+  Unsubscribe a service
   index.js release --record="{'docId': 'MachineID',
                                'clientID': 'clientID' , 'SubscribedTill':
                                '02/11/2022'}"
-
-  index.js release --record="{'docId': 'MachineID',
-                               'clientID': 'clientID', 'SubscribedTill':
-                               '02/11/2022'}"                               
+                               
   ```
 * node
   ```sh
